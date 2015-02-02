@@ -6,6 +6,31 @@ gem 'rails', '4.0.5'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.13.1'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
+
+  if RUBY_VERSION >= '2.0.0'
+    gem 'pry-byebug'
+  else
+    gem 'pry-debugger'
+    gem 'pry-remote'
+  end
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  gem 'hirb'
+  gem 'hirb-unicode'
+
+  gem 'tapp'
+  gem 'awesome_print'
+  gem 'quiet_assets'
+  gem 'annotate', git: 'git://github.com/ctran/annotate_models.git'
+  gem 'timecop'
+  gem 'guard-rspec'
+  gem 'factory_girl_rails'
+  gem 'database_rewinder'
 end
 
 group :test do
